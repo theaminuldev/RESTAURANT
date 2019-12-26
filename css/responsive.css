@@ -1,0 +1,978 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* =========================== */
+    /* HEDER SECTION */
+    /* =========================== */
+    .header .container {
+        position: relative;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .menu ul li {
+        margin: 5px 0px;
+    }
+
+    .header .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .header .menu ul li a.active {
+        color: #fff;
+        background: none;
+    }
+
+    /* ================================= */
+    /* HEADER SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* HERO SECTION STRAT*/
+    /* ================================= */
+    .hero-section .container .h-section {
+        padding-top: 60px;
+    }
+
+    .hero-section .container .h-section h1 {
+        font-size: 35px;
+    }
+
+    .hero-section .container .h-section .a-btn {
+        padding: 60px 0px;
+    }
+
+    /* ================================= */
+    /* HERO SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* HERO-2 SECTION STRAT */
+    /* ================================= */
+    .hero-section-2 .row .caption {
+        padding: 60px 25px;
+    }
+
+    .hero-section-2 .row .caption p {
+        padding-bottom: 0px;
+    }
+
+    .hero-section-2 .row .caption h3 {
+        font-size: 30px;
+    }
+
+    .hero-section-2 .row img {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* ================================= */
+    /* HERO-2 SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* PRODUCT SECTION STRAT */
+    /* ================================= */
+    .product {
+        padding: 60px 10px;
+    }
+
+    /* ================================= */
+    /* PRODUCT SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* DISCOVER SECTION STRAT*/
+    /* ================================= */
+    .discover .row .col-md-12 h3 {
+        font-size: 30px;
+    }
+
+    .discover .row .col-md-12 h2 {
+        font-size: 30px;
+    }
+
+    .discover .row .ctn {
+        padding: 10px 10px;
+    }
+
+    .discover .cover-1 {
+        display: none;
+    }
+
+    .discover .cover-2 {
+        display: flex;
+    }
+
+    .discover .cover-2 .ctn {
+        margin: 20px 0px;
+    }
+
+    .discover .cover-2 .ctn span {}
+
+    .discover .cover-2 .img {}
+
+    .discover .cover-2 .img img {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* ================================= */
+    /* DISCOVER SECTION END */
+    /* ================================= */
+    .simple .p-caption {
+        padding: 60px 0px;
+    }
+
+    .simple .p-caption h3 {
+        font-size: 30px;
+    }
+
+    /* ================================== */
+    /* SIMPLE END */
+    /* ================================== */
+    .d-cover .cover .title h4 {
+        font-size: 35px;
+    }
+
+    .d-cover .cover .title h2 {
+        font-size: 30px;
+    }
+
+    .d-cover .cover .row ul li {
+        padding: 0px 10px;
+    }
+
+    /* ================================== */
+    /* D-COVER END */
+    /* ================================== */
+    .photo {
+        height: 400px;
+    }
+
+    .form {
+        padding-bottom: 50px;
+    }
+
+    .form .row h4 {
+        padding-bottom: 30px;
+        font-size: 35px;
+    }
+
+    /* ================================ */
+    /* FORM END */
+    /* ================================ */
+    .photo-2 {
+        height: 200px;
+    }
+
+    .p-card .row .title {
+        padding-bottom: 20px;
+    }
+
+    .p-card .row .title h4 {
+        font-size: 35px;
+    }
+
+    .p-card .row .title h2 {
+        font-size: 30px;
+    }
+
+    .p-card .row .card {
+        width: 15.625rem;
+        margin: 15px auto;
+    }
+
+    /* =================================== */
+    /* P-CARD END */
+    /* =================================== */
+    .footer .row {
+        padding-bottom: 195px;
+    }
+
+    .footer .fter h6 {
+        padding-bottom: 0px;
+    }
+
+    .footer .fter p,
+    ul {
+        padding-bottom: 20px;
+    }
+
+    .footer .fter .social {
+        top: 130px;
+        left: 40px;
+    }
+
+    /* =================================== */
+    /* HOME PAGE END */
+    /* ==================================== */
+    .hero-about {
+        padding: 80px 0px;
+    }
+
+    .hero-about .h-section h3 {
+        font-size: 29px;
+    }
+
+    /* ===================================== */
+    /* HERO ABOUT END */
+    /* ===================================== */
+    .a-rest {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .a-rest .row .about h4 {
+        font-size: 35px;
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .a-rest .row .about h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .a-rest .row .about p {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    /* ================================== */
+    /* A-REST END */
+    /* ================================== */
+    .vision {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .vision .row .t-vision h4 {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    .vision .row .t-vision h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+
+    .vision .row .t-vision p {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    /* ====================================== */
+    /* VISION END */
+    /* ====================================== */
+    .team2-img {
+        height: 200px;
+    }
+
+    .team .til h4 {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    .team .til h2 {
+        font-size: 30px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+    }
+
+    .team .t-man .ctp {
+        width: 95%;
+        /* ===================================== */
+        /* TEAM END */
+        /* ===================================== */
+        /* ========================================== */
+        /* ABOUT PAGE END */
+        /* ========================================== */
+    }
+
+    .hero-menu {
+        padding: 80px 0px;
+    }
+
+    .hero-menu .h-section h3 {
+        font-size: 35px;
+    }
+
+    /* ================================ */
+    /* MENU PAGE END */
+    /* ================================ */
+    .hero-contact {
+        padding: 80px 0px;
+    }
+
+    .hero-contact .h-section h3 {
+        font-size: 35px;
+    }
+
+    .contact-us {
+        padding: 80px 0px;
+    }
+
+    .contact-us h2 {
+        font-size: 35px;
+    }
+
+    .contact-us h3 {
+        font-size: 35px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* =========================== */
+    /* HEDER SECTION */
+    /* =========================== */
+    .header .container {
+        position: relative;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .menu ul li {
+        margin: 5px 0px;
+    }
+
+    .header .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .header .menu ul li a.active {
+        color: #fff;
+        background: none;
+    }
+
+    /* ================================= */
+    /* HEADER SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* HERO SECTION STRAT*/
+    /* ================================= */
+    .hero-section .container .h-section {
+        padding-top: 70px;
+    }
+
+    .hero-section .container .h-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section .container .h-section .a-btn {
+        padding: 70px 0px;
+    }
+
+    /* ================================= */
+    /* HERO SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* HERO-2 SECTION STRAT */
+    /* ================================= */
+    .hero-section-2 .row .caption {
+        padding: 70px 25px;
+    }
+
+    .hero-section-2 .row .caption p {
+        padding-bottom: 0px;
+    }
+
+    .hero-section-2 .row .caption h3 {
+        font-size: 30px;
+    }
+
+    .hero-section-2 .row img {
+        height: 350px;
+        width: 100%;
+    }
+
+    /* ================================= */
+    /* HERO-2 SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* PRODUCT SECTION STRAT */
+    /* ================================= */
+    .product {
+        padding: 70px 10px;
+    }
+
+    /* ================================= */
+    /* PRODUCT SECTION END */
+    /* ================================= */
+    /* ================================= */
+    /* DISCOVER SECTION STRAT*/
+    /* ================================= */
+    .discover {
+        padding-bottom: 50px;
+    }
+
+    .discover .row .col-md-12 {
+        margin-top: 70px;
+    }
+
+    .discover .row .col-md-12 h3 {
+        font-size: 35px;
+    }
+
+    .discover .row .col-md-12 h2 {
+        font-size: 35px;
+    }
+
+    .discover .row .ctn {
+        padding: 10px 10px;
+    }
+
+    .discover .cover-1 {
+        display: none;
+    }
+
+    .discover .cover-2 {
+        display: flex;
+    }
+
+    .discover .cover-2 .ctn {
+        margin: 20px 0px;
+    }
+
+    .discover .cover-2 .ctn span {}
+
+    .discover .cover-2 .img {}
+
+    .discover .cover-2 .img img {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* ================================= */
+    /* DISCOVER SECTION END */
+    /* ================================= */
+    .simple .p-caption {
+        padding: 60px 0px;
+    }
+
+    .simple .p-caption h3 {
+        font-size: 35px;
+    }
+
+    /* ================================== */
+    /* SIMPLE END */
+    /* ================================== */
+    .d-cover .cover .title {
+        padding-top: 70px;
+    }
+
+    .d-cover .cover .title h4 {
+        font-size: 40px;
+    }
+
+    .d-cover .cover .title h2 {
+        font-size: 35px;
+    }
+
+    .d-cover .cover .row ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* ================================== */
+    /* D-COVER END */
+    /* ================================== */
+    .photo {
+        height: 400px;
+    }
+
+    .form {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .form .row h4 {
+        padding-bottom: 30px;
+        font-size: 40px;
+    }
+
+    /* ================================ */
+    /* FORM END */
+    /* ================================ */
+    .photo-2 {
+        height: 200px;
+    }
+
+    .p-card {
+        padding: 70px 0px;
+    }
+
+    .p-card .row .title {
+        padding-bottom: 20px;
+    }
+
+    .p-card .row .title h4 {
+        font-size: 40px;
+    }
+
+    .p-card .row .title h2 {
+        font-size: 35px;
+    }
+
+    .p-card .row .card {
+        width: 15.625rem;
+        margin: 15px auto;
+    }
+
+    /* =================================== */
+    /* P-CARD END */
+    /* =================================== */
+    .footer .row {
+        padding-bottom: 195px;
+    }
+
+    .footer .fter h6 {
+        padding-bottom: 0px;
+    }
+
+    .footer .fter p,
+    ul {
+        padding-bottom: 20px;
+    }
+
+    .footer .fter .social {
+        top: 130px;
+        left: 40px;
+    }
+
+    /* =============================== */
+    /* HOME PAGE END */
+    /* =============================== */
+    .hero-about {
+        padding: 100px 0px;
+    }
+
+    .hero-about .h-section h3 {
+        font-size: 35px;
+    }
+
+    /* ===================================== */
+    /* HERO ABOUT END */
+    /* ===================================== */
+    .a-rest {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .a-rest .row .img img {}
+
+    .a-rest .row .about h4 {
+        font-size: 40px;
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .a-rest .row .about h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .a-rest .row .about p {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    /* ================================== */
+    /* A-REST END */
+    /* ================================== */
+    .vision {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .vision .row .t-vision h4 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    .vision .row .t-vision h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+
+    .vision .row .t-vision p {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .vision .row .img {
+        position: relative;
+        left: auto;
+    }
+
+    /* ====================================== */
+    /* VISION END */
+    /* ====================================== */
+    .team2-img {
+        height: 300px;
+    }
+
+    .team .til h4 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    .team .til h2 {
+        font-size: 35px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+    }
+
+    .team .t-man .ctp {
+        width: 89%;
+
+    }
+
+    /* ===================================== */
+    /* TEAM END */
+    /* ===================================== */
+    /* ================================== */
+    /* ABOUT PAGE END */
+    /* ================================== */
+
+    .hero-menu {
+        padding: 80px 0px;
+    }
+
+    .hero-menu .h-section h3 {
+        font-size: 40px;
+    }
+
+    /* ==================================== */
+    /* MENU PAGE END */
+    /* ==================================== */
+    .hero-contact {
+        padding: 80px 0px;
+    }
+
+    .hero-contact .h-section h3 {
+        font-size: 35px;
+    }
+
+    .contact-us {
+        padding: 80px 0px;
+    }
+
+    .contact-us h2 {
+        font-size: 35px;
+    }
+
+    .contact-us h3 {
+        font-size: 35px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* ================================= */
+    /* HERO SECTION STRAT*/
+    /* ================================= */
+    .hero-section .container .h-section {
+        padding-top: 80px;
+    }
+
+    .hero-section .container .h-section .a-btn {
+        padding: 80px 0px;
+    }
+
+    .product {
+        padding: 80px 10px;
+    }
+
+    /* ================================= */
+    /* HERO SECTION END */
+    /* ================================= */
+    .hero-section-2 .row .caption {
+        padding: 60px 0px;
+    }
+
+    .hero-section-2 .row .caption h3 {
+        font-size: 30px;
+    }
+
+    .hero-section-2 .row img {
+        height: 321px;
+        width: 100%;
+    }
+
+    /* =========================== */
+    /* HERO-2 SECTION END */
+    /* =========================== */
+    .discover .cover-1 {
+        padding-bottom: 70px;
+    }
+
+    .discover .row .col-md-12 {
+        margin-top: 70px;
+    }
+
+    .discover .col-md-6 {
+        margin: 15px 0px;
+    }
+
+    /* =============================== */
+    /* discover end */
+    /* =============================== */
+    .simple .p-caption {
+        padding: 70px 0px;
+    }
+
+    .simple .p-caption h3 {
+        font-size: 35px;
+    }
+
+    /* ================================== */
+    /* SIMPLE END */
+    /* ================================== */
+    .form .row h4 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    /* ================================== */
+    .d-cover .cover .row ul li .til h6 {
+        font-size: 19px;
+    }
+
+    .photo {
+        height: 550px;
+    }
+
+    /* =========================== */
+    .photo-2 {
+        height: 350px;
+    }
+
+    /* =========================== */
+    /* PHOTO SECTION END */
+    /* =========================== */
+    .footer .fter .social {
+        top: 135px;
+        left: 40px;
+    }
+
+    /* =============================== */
+    /* HOME PAGE END */
+    /* =============================== */
+    .hero-about {
+        padding: 100px 0px;
+    }
+
+    .hero-about .h-section h3 {
+        font-size: 40px;
+    }
+
+    /* ===================================== */
+    /* HERO ABOUT END */
+    /* ===================================== */
+    .a-rest {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .a-rest .row .img img {}
+
+    .a-rest .row .about h4 {
+        font-size: 40px;
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .a-rest .row .about h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .a-rest .row .about p {
+        margin-bottom: 0px;
+        text-align: left;
+    }
+
+    /* ================================== */
+    /* A-REST END */
+    /* ================================== */
+    .vision {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .vision .row .t-vision h4 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    .vision .row .t-vision h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+
+    .vision .row .t-vision p {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .vision .row .img {
+        position: relative;
+        left: auto;
+    }
+
+    /* ====================================== */
+    /* VISION END */
+    /* ====================================== */
+    .team2-img {
+        height: 300px;
+    }
+
+    .team .til h4 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    .team .til h2 {
+        font-size: 35px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+    }
+
+    .team .t-man .ctp {
+        width: 92%;
+
+
+    }
+
+    /* ===================================== */
+    /* TEAM END */
+    /* ===================================== */
+    /* ========================================== */
+    /* ABOUT PAGE END */
+    /* ========================================== */
+    .hero-menu {
+        padding: 100px 0px;
+    }
+
+    .hero-menu .h-section h3 {
+        font-size: 35px;
+    }
+
+    .hero-contact {
+        padding: 100px 0px;
+    }
+
+    .hero-contact .h-section h3 {
+        font-size: 35px;
+    }
+
+    .contact-us {
+        padding: 80px 0px;
+    }
+
+    .contact-us h2 {
+        font-size: 35px;
+    }
+
+    .contact-us h3 {
+        font-size: 35px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .hero-section-2 .row .caption {
+        padding: 100px 0px;
+    }
+
+    .hero-section-2 .row .caption h3 {
+        font-size: 34px;
+    }
+
+    .hero-section-2 .row img {
+        height: 347px;
+        width: 100%;
+    }
+
+    /* =========================== */
+    /* HERO SECTION END */
+    /* =========================== */
+    .discover .row .col-md-12 {
+        margin-top: 80px;
+    }
+
+    .discover .cover-1 {
+        padding-bottom: 80px;
+    }
+
+    /* ============================= */
+    /* discover end */
+    /* ============================= */
+    .d-cover .cover .row ul li .til h6 {
+        font-size: 21px;
+    }
+
+    .footer .fter .social {
+        top: 135px;
+        left: 40px;
+    }
+
+    /* ================================= */
+    /* HOME PAGE END */
+    /* ================================ */
+    .team .t-man .ctp {
+        width: 88%;
+        /* ===================================== */
+        /* TEAM END */
+        /* ===================================== */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hero-section-2 .row .caption {
+        padding: 100px 0px;
+    }
+
+    .hero-section-2 .row .caption h3 {
+        font-size: 40px;
+    }
+
+    /* ================================= */
+    /* HERO SECTION END */
+    /* ================================= */
+    .discover .row .col-md-12 {
+        margin-top: 80px;
+    }
+
+    .discover {
+        padding-bottom: 80px;
+    }
+}

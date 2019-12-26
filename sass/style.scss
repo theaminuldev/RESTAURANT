@@ -1,0 +1,1166 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+a,
+li,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+$mr: 60px;
+$pb: 110px;
+$pt: 110px;
+$pd: 100px 0;
+$colorGood: #afc67b;
+$colorBold: #e8e8e8;
+
+%bg {
+    background-color: 3e4035;
+}
+
+%font-good {
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+%font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+%h1 {
+    font-size: 50px;
+    color: $colorBold;
+}
+
+%h2 {
+    font-size: 45px;
+    color: $colorBold;
+}
+
+%h3 {
+    font-size: 45px;
+    color: $colorGood;
+}
+
+%h4 {
+    font-size: 60px;
+    color: $colorBold;
+}
+
+%h5 {
+    font-size: 28px;
+    color: $colorGood;
+}
+
+%h6 {
+    font-size: 22px;
+    color: $colorGood;
+}
+
+h1,
+h2 {
+    @extend %font-montserrat;
+    text-transform: uppercase;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    @extend %font-good;
+    text-transform: capitalize;
+}
+
+%font-a {
+    color: $colorGood;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 15px;
+    @extend %font-montserrat;
+}
+
+%font-bold {
+    color: $colorBold;
+    font-size: 17px;
+    font-weight: 700px;
+    text-transform: capitalize;
+}
+
+%font-reguler {
+    color: $colorBold;
+    font-weight: 500;
+    @extend %font-montserrat;
+}
+
+body {
+    background-color: rgb(38, 38, 38);
+}
+
+// STRAT MENU SECTIN
+
+.header {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: +9999999999;
+    background-color: rgb(56, 60, 48) !important;
+
+    .logo {
+        img {
+            height: 80px;
+            width: 100px;
+        }
+    }
+
+    .menu {
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding-top: 20px;
+            justify-content: flex-end;
+
+            li {
+                a {
+                    @extend %font-a;
+                    text-decoration: none;
+                }
+
+                a.active-menu {
+                    border-radius: 3px;
+                    padding: 7px 10px;
+                    background: #fff;
+                }
+            }
+
+            li:last-child a {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+        padding-top: 30px;
+
+        i {
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+}
+
+// END MENU SECTION
+
+// SOCIAL SECTION STRAT
+
+.social-media {
+    width: 40px;
+    position: fixed;
+    top: 270px;
+    left: 15px;
+    z-index: +9999;
+
+    .controller-icon {
+        height: 45px;
+        width: 45px;
+        border: 2px solid #fff;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 13px;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+
+        i {
+            font-size: 33px;
+            color: #fff;
+        }
+    }
+
+    .social-media-icons {
+        display: none;
+
+        ul {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+
+            li {
+                height: 40px;
+                width: 40px;
+                border: 2px solid #fff;
+                margin: 2px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin: 5px 0;
+                cursor: pointer;
+                border-radius: 3px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                a {
+                    color: black;
+                    font-size: 19px;
+                    display: block;
+
+                    .slider {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: 40px;
+                        width: 0;
+                        height: 40px;
+                        background: #eebb5c;
+                        border-radius: 3px;
+                        transition: all 0.5s 0.3s ease;
+                    }
+
+                    .slider p {
+                        font-family: arial;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 900;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 40px;
+                        opacity: 0;
+                        transition: all 0.6s ease;
+                    }
+                }
+
+                a.google-color {
+                    color: #F4B400;
+                }
+
+                a.twitter-color {
+                    color: #00acee;
+                }
+
+                a.youtube-color {
+                    color: #c4302b;
+                }
+
+                a.instagram-color {
+                    color: #dd94c6;
+                }
+
+                a.facebook-color {
+                    color: #3b5998;
+                }
+            }
+        }
+
+        ul li.google div.slider {
+            background: #F4B400;
+        }
+
+        ul li.twitter div.slider {
+            background: #7fd5f6;
+        }
+
+        ul li.youtube div.slider {
+            background: #c4302b;
+        }
+
+        ul li.instagram div.slider {
+            background: #dd94c6;
+        }
+
+        ul li.facebook div.slider {
+            background: #627aac;
+        }
+
+        ul li:hover .slider {
+            width: 180px;
+            transition: all 0.5s ease;
+        }
+
+        ul li:hover .slider p {
+            opacity: 1;
+            transition: all 1s 0.2s ease;
+        }
+    }
+}
+
+// SOCIAL SECTION END
+
+// STRAT HERO SECTION
+
+.hero-section {
+    background: url("../images/hero-section.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .container {
+        .h-section {
+            text-align: right;
+            padding-top: $pt;
+
+            h1 {
+                @extend %h1;
+            }
+
+            .a-btn {
+                padding-top: $pt;
+                padding-bottom: $pb;
+
+                .btn {
+                    @extend %font-a;
+                    padding: 10px;
+                    background-color: rgb(56, 60, 48);
+                }
+            }
+        }
+    }
+}
+
+// HERO SECTION END
+// HERO SECTION-2 STRAT
+
+.hero-section-2 {
+    box-sizing: border-box;
+    background-color: rgb(33, 33, 33);
+
+    .row {
+        position: relative;
+
+        .caption {
+            padding-top: $pt;
+            padding-bottom: $pb;
+
+            h3 {
+                @extend %h3;
+            }
+
+            p {
+                @extend %font-reguler;
+                padding-bottom: 9px;
+            }
+        }
+
+        img {
+            position: absolute;
+            right: -104px;
+        }
+    }
+}
+
+// HERO SECTION-2 END
+// PRODUCT DEMO  STRAT
+
+.product {
+    background-color: rgb(56, 60, 48);
+    padding-top: $pt;
+    padding-bottom: $pb;
+    box-sizing: border-box;
+
+    .row {
+        .p-caption {
+            .icon {
+                color: $colorGood;
+                padding-bottom: 10px;
+                font-size: 20px;
+            }
+
+            h6 {
+                @extend %h6;
+                padding-bottom: 10px;
+            }
+
+            p {
+                @extend %font-reguler;
+            }
+        }
+    }
+}
+
+// PRODUCT DEMO END
+// DISCOVER STRAT
+
+.discover {
+    margin-top: $mr;
+    margin-bottom: $mr;
+    background-color: rgb(68, 72, 58);
+
+    .row {
+        .col-md-12 {
+            margin-top: $mr;
+            margin-bottom: $mr;
+            text-align: center;
+
+            h3 {
+                @extend %h3;
+            }
+
+            h2 {
+                @extend %h2;
+            }
+        }
+    }
+
+    .row {
+        .img {}
+
+        .ctn {
+            padding-top: 50px;
+            padding-left: 15px;
+
+            h6 {
+                @extend %h6;
+            }
+
+            p {
+                @extend %font-reguler;
+            }
+
+            span {
+                @extend %font-good;
+                color: $colorGood;
+            }
+        }
+    }
+}
+
+// DISCOVER END
+// SIMPLE STRAT
+
+.simple {
+    background-color: rgb(68, 72, 58);
+
+    .p-caption {
+        padding: $pt;
+        text-align: center;
+
+        h3 {
+            @extend %h3;
+            padding-bottom: 20px;
+        }
+
+        p {
+            @extend %font-reguler;
+            padding-bottom: 20px;
+        }
+
+        .icon {
+            color: $colorGood;
+            font-size: 20px;
+        }
+    }
+}
+
+// SIMPLE END
+// D-COVER SECTION STRAT
+
+.d-cover {
+    background: url("../images/hero-section-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .cover {
+        position: relative;
+        top: 200px;
+        background-color: rgb(68, 72, 58);
+
+        .title {
+            padding-top: $mr;
+            padding-bottom: $mr;
+            text-align: center;
+
+            h4 {
+                @extend %h4;
+            }
+
+            h2 {
+                @extend %h2;
+            }
+        }
+
+        .row {
+            ul {
+                li {
+                    i {
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background: $colorBold;
+                        text-align: center;
+                        line-height: 60px;
+                        font-size: 40px;
+                    }
+
+                    .til {
+                        position: relative;
+                        top: -70px;
+                        padding-left: 70px;
+
+                        h6 {
+                            @extend %h6;
+                        }
+
+                        p {
+                            @extend %font-reguler;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// D-COVER SECTION END
+// PHOTO SECTION STRAT
+
+.photo {
+    background: url("../images/hero-section-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+}
+
+// PHOTO SETION END
+// FORM SECTION STRAT
+
+.form {
+    padding-top: $mr;
+    padding-bottom: $mr;
+
+    .row {
+        h4 {
+            text-align: center;
+            @extend %h4;
+            padding-bottom: $mr;
+        }
+    }
+
+    form {
+        .form-row {
+            .col-md-3 {
+                padding-bottom: 30px;
+
+                label {
+                    color: $colorBold;
+                    @extend %font-montserrat;
+                }
+
+                .bg {
+                    text-transform: uppercase;
+                    @extend %font-a;
+                    background-color: rgb(56, 60, 48);
+                }
+
+                input {
+                    background-color: rgb(38, 38, 38);
+                    color: $colorBold;
+                }
+            }
+        }
+    }
+}
+
+// FORM SECTION END
+// PHOTO SECTION -2
+
+.photo-2 {
+    background: url("../images/hero-section-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+// P-CARD SECTION STRAT
+
+.p-card {
+    background-color: rgb(68, 72, 58);
+    padding-top: $mr;
+    padding-bottom: $mr;
+
+    .row {
+        .title {
+            text-align: center;
+            padding-bottom: $mr;
+
+            h4 {
+                @extend %h4;
+            }
+
+            h2 {
+                @extend %h2;
+            }
+        }
+    }
+
+    .row {
+        .card {
+            border: 0 none;
+            margin: 15px 0px;
+
+            img {
+                height: 225px;
+            }
+
+            .card-body {
+                h6 {
+                    @extend %font-montserrat;
+                }
+
+                h5 {
+                    @extend %font-montserrat;
+                }
+
+                p {
+                    @extend %font-reguler;
+                    color: #7b7f80;
+                }
+
+                a {
+                    @extend %font-montserrat;
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 16;
+                    border-bottom: 4px solid #3e4435;
+                }
+            }
+        }
+    }
+}
+
+// P-CARD SECTION END
+// SOCIAL SECTION STRAT
+
+.s-caption {
+    padding-top: $mr;
+    padding-bottom: $mr;
+
+    .caption {
+        text-align: center;
+
+        P {
+            @extend %font-reguler;
+            @extend %font-good;
+            padding-bottom: 15px;
+        }
+
+        h5 {
+            @extend %h5;
+        }
+    }
+}
+
+// SOCIALSECTIIN END
+// FOOTER SECTION STRAT
+
+.footer {
+    background-color: rgb(68, 72, 58);
+
+    .row {
+        padding-top: $mr;
+        padding-bottom: $mr +30px;
+    }
+
+    .fter {
+        h6 {
+            @extend %h6;
+            @extend %font-montserrat;
+            color: #e8e8e8;
+            padding-bottom: 20px;
+        }
+
+        p {
+            @extend %font-reguler;
+        }
+
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    @extend %font-reguler;
+                }
+            }
+        }
+
+        .social {
+            position: absolute;
+            top: 80%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            padding-bottom: 0;
+            padding-top: 0;
+
+            ul {
+                list-style: none;
+
+                li {
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    margin: 10px 0;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                    .fab {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        ul li.facebook {
+            background: #3b5998;
+        }
+
+        ul li.twitter {
+            background: #00aced;
+        }
+
+        ul li.instagram {
+            background: #bc2a8d;
+        }
+
+        ul li.facebook div.slider {
+            background: #627aac;
+        }
+
+        ul li.twitter div.slider {
+            background: #7fd5f6;
+        }
+
+        ul li.instagram div.slider {
+            background: #dd94c6;
+        }
+
+        .slider {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 43px;
+            width: 0;
+            height: 39px;
+            background: #eebb5c;
+            border-radius: 3px;
+            transition: all 0.5s 0.3s ease;
+        }
+
+        .slider p {
+            font-family: arial;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 900;
+            color: #fff;
+            text-align: center;
+            line-height: 39px;
+            opacity: 0;
+            transition: all 0.6s ease;
+        }
+
+        ul li:hover .slider {
+            width: 180px;
+            transition: all 0.5s ease;
+        }
+
+        ul li:hover .slider p {
+            opacity: 1;
+            transition: all 1s 0.2s ease;
+        }
+    }
+}
+
+/*========================*/
+/*FOOTER SECTION END*/
+/*========================*/
+/*========================*/
+/*HOME SECTION END*/
+/*========================*/
+.scrolltop {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #000;
+    font-size: 29px;
+}
+
+/*=======================*/
+/*ABOUT SECTION STRAT*/
+/*=======================*/
+/*=======================*/
+/*HERO-AOUT STRAT*/
+/*=======================*/
+.hero-about {
+    background: url("../images/hero-section-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: rgb(0, 0, 0, );
+    /*background-attachment: fixed;*/
+    padding-top: $pt;
+    padding-bottom: $pb;
+
+    .h-section {
+        h3 {
+            @extend %h3;
+        }
+
+        p {
+            @extend %font-reguler;
+        }
+    }
+}
+
+/*=======================*/
+/*HERO-AOUT END*/
+/*=======================*/
+/*=======================*/
+/*A-REST STRAT*/
+/*=======================*/
+.a-rest {
+    padding-top: $pt;
+    padding-bottom: $pb;
+    background-color: rgb(68, 72, 58);
+
+    .row {
+        .img {
+            img {
+                height: 400px;
+            }
+        }
+
+        .about {
+            text-align: center;
+
+            h4 {
+                @extend %h4;
+            }
+
+            h2 {
+                @extend %h2;
+                margin-bottom: 40px;
+            }
+
+            p {
+                @extend %font-reguler;
+                text-align: left;
+            }
+        }
+    }
+}
+
+/*=======================*/
+/*A-REST STRAT*/
+/*=======================*/
+
+
+/*=======================*/
+/*VISION STRAT*/
+/*=======================*/
+.vision {
+    padding-top: $pt;
+    padding-bottom: $pb;
+
+    .row {
+        .img {
+            img {
+                height: 400px;
+            }
+        }
+
+        .t-vision {
+            text-align: center;
+
+            h4 {
+                @extend %h4;
+            }
+
+            h2 {
+                @extend %h2;
+                margin-bottom: 40px;
+            }
+
+            p {
+                @extend %font-reguler;
+                text-align: left;
+            }
+        }
+    }
+}
+
+/*=======================*/
+.team2-img {
+    background: url("../images/ebent4.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+/*=======================*/
+/*VISION END*/
+/*=======================*/
+
+
+/*=======================*/
+/*TEAM STRAT*/
+/*=======================*/
+.team-img {
+    background: url("../images/ebent4.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+/*==============================*/
+
+.team {
+    padding-top: $mr;
+    padding-bottom: 30px;
+
+    .til {
+        text-align: center;
+
+        h2 {
+            @extend %h2;
+            margin-bottom: $mr;
+        }
+
+        h4 {
+            @extend %h4;
+        }
+    }
+
+    .t-man {
+        background: $colorBold;
+        border-radius: 4px;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        height: 350px;
+
+        img {
+            height: 350px;
+        }
+
+        .ctp {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            position: absolute;
+            left: 15px;
+            top: 0;
+            width: 90%;
+            height: 350px;
+            padding: 20px;
+            border-radius: 4px;
+            background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 0, .6)), color-stop(50%, transparent));
+            background: linear-gradient(to top, rgba(0, 0, 0, .6) 20%, transparent 50%);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.3s linear, transform 0.4s;
+
+            ul {
+                li {
+                    @extend %font-reguler;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .ctp:hover {
+            opacity: 1;
+            transform: translateY(-0px);
+        }
+    }
+}
+
+/*=======================*/
+/*TEAM END*/
+/*=======================*/
+/*=======================*/
+/*ABOUT SECTION END*/
+/*=======================*/
+
+
+
+/*=======================*/
+/*MENU SECTION STRAT*/
+/*=======================*/
+
+/*=======================*/
+/*HERO-MENU STRAT*/
+/*=======================*/
+.hero-menu {
+    background: url("../images/event8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: rgb(0, 0, 0, );
+    /*background-attachment: fixed;*/
+    padding-top: $pt;
+    padding-bottom: $pb;
+
+    .h-section {
+        h3 {
+            @extend %h3;
+        }
+
+        p {
+            @extend %font-reguler;
+        }
+    }
+}
+
+.form2 {
+    background-color: rgb(68, 72, 58);
+
+    form {
+        .form-row {
+            .col-md-3 {
+
+                input {
+                    background-color: rgb(68, 72, 58);
+                }
+            }
+        }
+    }
+}
+
+/*=======================*/
+/*HERO-MENU END*/
+/*=======================*/
+/*=======================*/
+/*MENU SECTION STRAT*/
+/*=======================*/
+/*=======================*/
+/*CONTACT SECTION STRAT*/
+/*=======================*/
+.hero-contact {
+    background: url("../images/contact-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: rgb(0, 0, 0, );
+    /*background-attachment: fixed;*/
+    padding-top: $pt;
+    padding-bottom: $pb;
+
+    .h-section {
+        h3 {
+            @extend %h3;
+        }
+
+        p {
+            @extend %font-reguler;
+        }
+    }
+}
+
+.contact-us {
+    padding-top: $pt;
+    padding-bottom: $pb;
+
+    h3 {
+        @extend %h3;
+        text-align: center;
+    }
+
+    h2 {
+        @extend %h2;
+        text-align: center;
+    }
+
+    .single-input {
+        @extend %font-montserrat;
+
+        label {
+            margin: 0;
+            position: relative;
+            top: 30px;
+            left: 12px;
+            color: #797979;
+            z-index: -1;
+        }
+
+        input {
+            box-shadow: none;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            border-radius: 0;
+            background: transparent;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #ced4da;
+
+        }
+
+        textarea {
+            box-shadow: none;
+            outline: none;
+            resize: none;
+            background: transparent;
+            height: 164px !important;
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            border-radius: 0;
+        }
+    }
+
+    .submit-button {
+        margin: auto;
+        @extend %font-montserrat;
+
+        input[type="submit"] {
+            background-color: rgb(68, 72, 58);
+            color: white;
+            outline: none;
+            box-shadow: none;
+            margin: 0px auto;
+            margin-top: 50px;
+            display: block;
+        }
+
+    }
+}
+
+
+/*=======================*/
+/*CONTACT SECTION STRAT*/
+/*=======================*/
