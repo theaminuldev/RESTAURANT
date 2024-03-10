@@ -1,645 +1,913 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Aminul Islam">
-    <meta name="description" content="Bangladesh best Restaurant">
-    <meta name="keywords" content="Restaurant, Food Product, Best Restaurant">
-    <meta name="cuntry" content="Bangladesh">
-    <meta name="design" content="Theme Master">
-    <!-- =============================== -->
-    <!--END META TAG-->
-    <!-- =============================== -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Sedgwick+Ave&display=swap">
-    <link rel="stylesheet" href="vendor/css/animate.min.css">
-    <link rel="stylesheet" href="vendor/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/loder.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>Restaurant</title>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- 
+    - primary meta tags
+  	-->
+	<title>Restaurant - Amazing & Delicious Food</title>
+	<meta name="title" content="Restaurant - Amazing & Delicious Food (Grilli)">
+	<meta name="description" content="This is a Restaurant html template made by The Aminul">
+
+	<!-- 
+    - google font link
+  	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+		rel="stylesheet">
+
+	<!-- 
+    - custom css link
+  	-->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- 
+    - preload images
+  	-->
+	<link rel="preload" as="image" href="./src/images/hero/hero-slider-1.jpg">
+	<link rel="preload" as="image" href="./src/images/hero/hero-slider-2.jpg">
+	<link rel="preload" as="image" href="./src/images/hero/hero-slider-3.jpg">
 </head>
 
-<body>
-    <!--LOADER SECTION STRAT-->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
+<body id="top">
 
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-    <!--LOADER SECTION END-->
-    <div class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </div><!-- #End Logo-->
-                </div>
-                <div class="col-md-9">
-                    <div class="menu">
-                        <ul>
-                            <li><a class="active" href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href=menu.html>MENU</a></li>
-                            <li><a href=blog.html>BLOG</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </div><!-- #End Menu -->
-                </div>
-            </div>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </div>
-    <!-- MENU SECTION END -->
+	<!-- 
+	  - #PRELOADER
+	-->
 
-    <!--SOCAIL SECTION STRAT-->
-    <div class="social-media">
-        <div class="controller-icon">
-            <i class="fas fa-chevron-right"></i>
-        </div>
+	<div class="preload" data-preaload>
+		<div class="circle"></div>
+		<p class="text">Restaurant</p>
+	</div>
 
-        <div class="social-media-icons">
-            <ul>
-                <li class="google">
-                    <a href="#" class="google-color">
-                        <i class="fab fa-google"></i>
-                        <div class="slider">
-                            <p>google</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="twitter">
-                    <a href="#" class="twitter-color">
-                        <i class="fab fa-twitter"></i>
-                        <div class="slider">
-                            <p>twitter</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="youtube">
-                    <a href="#" class="youtube-color">
-                        <i class="fab fa-youtube"></i>
-                        <div class="slider">
-                            <p>youtube</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="instagram">
-                    <a href="" class="instagram-color">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <div class="slider">
-                            <p>instagram</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="facebook">
-                    <a href="#" class="facebook-color">
-                        <i class="fab fa-facebook-square"></i>
-                        <div class="slider">
-                            <p>facebook</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+	<!-- 
+	  - #TOP BAR
+	-->
 
-    </div>
-    <!--SOCIAL SECTION -->
-    <!-- HERO SECTION STRAT -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="h-section">
-                <h1>NEW OPENING</h1>
-                <h1>23RD SEPT</h1>
-                <div class="a-btn">
-                    <a href="" class="btn btn-lg">LEARN MORE</a>
-                </div>
+	<div class="topbar">
+		<div class="container">
 
-            </div>
-        </div>
-    </section>
-    <!-- HERO SECTION END -->
-    <!-- 2 HERO SECTION STRAT -->
-    <section class="hero-section-2">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5 col-sm-12">
-                    <div class="caption wow fadeInUp">
-                        <h3>What do we actually cook?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quidem eaque enim nihil at! Deleniti laboriosam incidunt iure,</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 wow fadeInRight">
-                    <img src="images/hero-section-2.png" alt="hero" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- HERO SECTION-2 END -->
-    <!-- PRODUCT DEMO STRAT -->
-    <section class="product">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="p-caption  wow fadeInUp">
-                        <div class="icon">
-                            <i class="fas fa-egg"></i>
-                        </div>
-                        <h6> New tastes</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil voluptatum officiis, fuga maxime. Repudiandae!</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="p-caption wow fadeInUp">
-                        <div class="icon">
-                            <i class="fas fa-egg"></i>
-                            <i class="fas fa-egg"></i>
-                        </div>
-                        <h6> New tastes</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil voluptatum officiis, fuga maxime. Repudiandae!</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="p-caption wow fadeInUp">
-                        <div class="icon">
-                            <i class="fas fa-egg"></i>
-                            <i class="fas fa-egg"></i>
-                            <i class="fas fa-egg"></i>
-                        </div>
-                        <h6> New tastes</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil voluptatum officiis, fuga maxime. Repudiandae!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- PRODUCT DEMO END -->
-    <!-- DESCOVER STRAT  -->
-    <section class="discover">
-        <div class="container">
+			<address class="topbar-item">
+				<div class="icon">
+					<ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+				</div>
 
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <h3>We bring tradit</h3>
-                    <h2>O YOUR PLATE</h2>
-                </div>
-            </div>
-            <div class="row cover-1">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="img wow fadeInRight">
-                        <img src="images/descover-1.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="ctn wow fadeInRight">
-                        <h6>California Sushi</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</p>
-                        <span>$ 14.09</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="img wow fadeInRight">
-                        <img src="images/discover-2.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="ctn wow fadeInRight">
-                        <h6>Traditional Wok</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, accusamus.</p>
-                        <span> $28.09</span>
-                    </div>
-                </div>
-                <!-- ================================== -->
+				<span class="span">
+					Restaurant Suite No : B-2, Level-2, Asad Ave, Dhaka 1207
+				</span>
+			</address>
 
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="ctn wow fadeInLeft">
-                        <h6>California Sushi</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</p>
-                        <span>$ 14.09</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="img wow fadeInLeft">
-                        <img src="images/discover-3.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="ctn wow fadeInLeft">
-                        <h6>Traditional Wok</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, accusamus.</p>
-                        <span> $28.09</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="img wow fadeInLeft">
-                        <img src="images/discover-4.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <!-- ============================= -->
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="img wow fadeInRight">
-                        <img src="images/discover-5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="ctn wow fadeInRight">
-                        <h6>California Sushi</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</p>
-                        <span>$ 14.09</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="img wow fadeInRight">
-                        <img src="images/discover-6.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="ctn wow fadeInRight">
-                        <h6>Traditional Wok</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, accusamus.</p>
-                        <span> $28.09</span>
-                    </div>
-                </div>
-            </div>
-            <!-- ======================== -->
-            <div class="row cover-2">
-                <div class="col-md-3 col-sm-12">
-                    <div class="img wow fadeInUp">
-                        <img src="images/descover-1.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="ctn wow fadeInUp">
-                        <h6>California Sushi</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</p>
-                        <span>$ 14.09</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="img wow fadeInUp">
-                        <img src="images/discover-2.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="ctn wow fadeInUp">
-                        <h6>Traditional Wok</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, accusamus.</p>
-                        <span> $28.09</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="img wow fadeInUp">
-                        <img src="images/discover-5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="ctn wow fadeInUp">
-                        <h6>California Sushi</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</p>
-                        <span>$ 14.09</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="img wow fadeInUp">
-                        <img src="images/discover-6.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="ctn wow fadeInUp">
-                        <h6>Traditional Wok</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, accusamus.</p>
-                        <span> $28.09</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- DISCOVER END-->
-    <!-- SIMPLE PART STRAT -->
-    <section class="simple">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="p-caption">
-                        <h3>We like to keep things simple</h3>
-                        <p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci repudiandae rerum id laboriosam tempore obcaecati, harum natus nobis, dolore velit qui libero delectus tempora! Ut, voluptatibus explicabo animi dolorum tempore!</p>
-                        <div class="icon">
-                            <i class="fas fa-egg"></i>
-                            <i class="fas fa-egg"></i>
-                            <i class="fas fa-egg"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- SIMPLE PART END -->
-    <!-- D-COVER SECTIN STRAT -->
-    <section class="d-cover">
-        <div class="cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="title">
-                            <h4>Discover</h4>
-                            <h2>our new menu</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-5 col-sm-12">
-                        <ul>
-                            <li><i class="fas fa-cloud-meatball"></i>
-                                <div class="til wow fadeInUp">
-                                    <h6>Nigiri with our best fish</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, iusto.</p>
-                                </div>
-                            </li>
-                            <li><i class="fas fa-hamburger"></i>
-                                <div class="til wow fadeInUp">
-                                    <h6>Nigiri with our best fish</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, iusto.</p>
-                                </div>
-                            </li>
-                            <li><i class="fas fa-ice-cream"></i>
-                                <div class="til wow fadeInUp">
-                                    <h6>Nigiri with our best fish</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, iusto.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-2 col-sm-2"></div>
-                    <div class="col-lg-4 col-md-5 col-sm-12">
-                        <ul>
-                            <li><i class="fas fa-cloud-meatball"></i>
-                                <div class="til wow fadeInUp">
-                                    <h6>Nigiri with our best fish</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, iusto.</p>
-                                </div>
-                            </li>
-                            <li><i class="fas fa-hamburger"></i>
-                                <div class="til wow fadeInUp">
-                                    <h6>Nigiri with our best fish</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, iusto.</p>
-                                </div>
-                            </li>
-                            <li><i class="fas fa-ice-cream"></i>
-                                <div class="til wow fadeInUp">
-                                    <h6>Nigiri with our best fish</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, iusto.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- D-COVER SECTION END  -->
-    <!-- PTHOTO SECTION STRAT -->
-    <section class="photo">
+			<div class="separator"></div>
 
-    </section>
-    <!-- PHOTO SECTION END -->
-    <!-- FORM SECTION STRAT -->
-    <section class="form">
-        <div class="container wow fadeInUp">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Book here</h4>
-                </div>
-            </div>
-            <form class="" action="index.html" method="post">
-                <div class="form-row ">
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <label class=" col-form-label" for="people">How many people?</label>
-                        <input type="number" class="form-control" placeholder="People">
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <label for="date">When is your date?</label>
-                        <input type="date" class="form-control" placeholder="Date">
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <label for="time">Time:</label>
-                        <input type="time" class="form-control" placeholder="Time">
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <label class=" col-form-label" for="people">Name:</label>
-                        <input type="text" class="form-control" placeholder="People">
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <label for="date">Your Email:</label>
-                        <input type="email" class="form-control" placeholder="Your Email">
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <label for="time">Phone:</label>
-                        <input type="number" class="form-control" placeholder="Phone">
-                    </div>
-                </div>
-                <div class="form-row mr">
+			<div class="topbar-item item-2">
+				<div class="icon">
+					<ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+				</div>
 
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <button type="submit" class="btn btn-lg">SUBMIT</button>
-                    </div>
+				<span class="span">Daily : 8.00 am to 10.00 pm</span>
+			</div>
 
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- FORM SECTION END  -->
-    <!-- PHOTO SECTION STRAT -->
-    <section class="photo-2">
+			<a href="tel:+11234567890" class="topbar-item link">
+				<div class="icon">
+					<ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+				</div>
 
-    </section>
-    <section class="p-card">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h4>Discov</h4>
-                        <h2>our new menu</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <!-- style="width: 15.625rem;" -->
-                    <div class="card wow fadeInLeft">
-                        <img src="images/product-1.png" class="card-img-top" alt="product">
-                        <div class="card-body">
-                            <h6>ood / 16th March, 2019</h6>
-                            <h5 class="card-title">Lorem ipsum dolor.</h5>
-                            <p class="card-text">Some quick example text to build on the card title example.</p>
-                            <a href="#" class="a-btn"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card wow fadeIn">
-                        <img src="images/product-2.png" class="card-img-top" alt="product">
-                        <div class="card-body">
-                            <h6>ood / 16th March, 2019</h6>
-                            <h5 class="card-title">Lorem ipsum dolor.</h5>
-                            <p class="card-text">Some quick example text to build on the card title example.</p>
-                            <a href="#" class="a-btn"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card wow fadeIn">
-                        <img src="images/product-3.png" class="card-img-top" alt="product">
-                        <div class="card-body">
-                            <h6>ood / 16th March, 2019</h6>
-                            <h5 class="card-title">Lorem ipsum dolor.</h5>
-                            <p class="card-text">Some quick example text to build on the card title example.</p>
-                            <a href="#" class="a-btn"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card wow fadeInRight">
-                        <img src="images/product-1.png" class="card-img-top" alt="product">
-                        <div class="card-body">
-                            <h6>ood / 16th March, 2019</h6>
-                            <h5 class="card-title">Lorem ipsum dolor.</h5>
-                            <p class="card-text">Some quick example text to build on the card title example.</p>
-                            <a href="#" class="a-btn"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <a class="btn veiw" href="menu.html">Veiw Menu</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- P-CARD SECTION END  -->
-    <!-- SOCIAL SECTION END -->
-    <section class="s-caption">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="caption">
-                        <div class="icon">
-                            <i class="fas fa-egg"></i>
-                            <i class="fas fa-egg"></i>
-                            <i class="fas fa-egg"></i>
-                        </div>
-                        <p class="wow fadeInUp ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque unde, non est magnam officiis, dolore illo vitae alias earum quia quidem veritatis cum assumenda tempora, eos? Illo fugiat, laudantium necessitatibus.</p>
-                        <h5>Linda Steward</h5>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
-    </section>
-    <!-- SOCIAL SECTON END -->
-    <!-- FOOTER SECTION STRAT -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="fter">
-                        <h6>Address</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo molestias alias tenetur adipisci tempora, itaque dolore necessitatibus tempore.</p>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
-                    <div class="fter">
-                        <h6>Contact Us</h6>
-                        <ul>
-                            <li> <b>Company: </b> Restaurant</li>
-                            <li> <b>Phone: </b> +0997654322</li>
-                            <li> <b>Email: </b> <a href="">resBD@gmail.com</a></li>
-                            <li> <b>Web Site: </b><a href=""> www.rest.com</a></li>
-                        </ul>
+				<span class="span">123 456 7890</span>
+			</a>
 
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="fter">
-                        <h6>Page</h6>
-                        <ul>
-                            <li> <a href="#">Team</a> </li>
-                            <li> <a href="#">Jone Us</a> </li>
-                            <li> <a href="#">Ethc</a> </li>
-                            <li> <a href="#"> Goals</a></li>
-                        </ul>
+			<div class="separator"></div>
 
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="fter">
-                        <h6>Follow</h6>
-                        <div class="social">
-                            <ul>
-                                <li class="facebook">
-                                    <a href="">
-                                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                                        <div class="slider">
-                                            <p>facebook</p>
-                                        </div>
-                                    </a>
-                                </li>
+			<a href="mailto:booking@restaurant.com" class="topbar-item link">
+				<div class="icon">
+					<ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+				</div>
 
-                                <li class="twitter">
-                                    <a href="">
-                                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                                        <div class="slider">
-                                            <p>twitter</p>
-                                        </div>
-                                    </a>
-                                </li>
+				<span class="span">booking@restaurant.com</span>
+			</a>
 
-                                <li class="instagram">
-                                    <a href="">
-                                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                                        <div class="slider">
-                                            <p>instagram</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+		</div>
+	</div>
+	<!-- 
+	  - #HEADER
+	-->
 
-                    </div>
-                </div>
+	<header class="header" data-header>
+		<div class="container">
 
-            </div>
-        </div>
-        <!-- <div class="athor">
-      <li><b>Designer by <a href="">Aminul Islam</a></b></li>
-    </div> -->
+			<a href="#" class="logo">
+				<img src="./logo.png" width="25%%" height="50%" alt="Restaurant - Home">
+			</a>
 
-    </footer>
-    <i class="fas fa-angle-up scrolltop"></i>
+			<nav class="navbar" data-navbar>
 
-    <!--===========================-->
-    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="vendor/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="vendor/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="vendor/js/popper.min.js"></script>
-    <script type="text/javascript" src="vendor/js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+				<button class="close-btn" aria-label="close menu" data-nav-toggler>
+					<ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+				</button>
+
+				<a href="#" class="logo">
+					<img src="./logo.png" width="25%" height="50%" alt="Restaurant - Home">
+				</a>
+
+				<ul class="navbar-list">
+
+					<li class="navbar-item">
+						<a href="#home" class="navbar-link hover-underline active">
+							<div class="separator"></div>
+
+							<span class="span">Home</span>
+						</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#menu" class="navbar-link hover-underline">
+							<div class="separator"></div>
+
+							<span class="span">Menus</span>
+						</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#about" class="navbar-link hover-underline">
+							<div class="separator"></div>
+
+							<span class="span">About Us</span>
+						</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#" class="navbar-link hover-underline">
+							<div class="separator"></div>
+
+							<span class="span">Our Chefs</span>
+						</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#contact" class="navbar-link hover-underline">
+							<div class="separator"></div>
+
+							<span class="span">Contact</span>
+						</a>
+					</li>
+
+				</ul>
+
+				<div class="text-center">
+					<p class="headline-1 navbar-title">Visit Us</p>
+
+					<address class="body-4">
+						Suite No : B-2, Level-2, Asad Ave <br>
+						Dhaka 1207, Bangladesh
+					</address>
+
+					<p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+					<a href="mailto:booking@Restaurant.com" class="body-4 sidebar-link">booking@Restaurant.com</a>
+
+					<div class="separator"></div>
+
+					<p class="contact-label">Booking Request</p>
+
+					<a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+						+88-123-123456
+					</a>
+				</div>
+
+			</nav>
+
+			<a href="#" class="btn btn-secondary">
+				<span class="text text-1">Find A Table</span>
+
+				<span class="text text-2" aria-hidden="true">Find A Table</span>
+			</a>
+
+			<button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+				<span class="line line-1"></span>
+				<span class="line line-2"></span>
+				<span class="line line-3"></span>
+			</button>
+
+			<div class="overlay" data-nav-toggler data-overlay></div>
+
+		</div>
+	</header>
+
+	<main>
+		<article>
+
+			<!-- 
+		  - #HERO
+		-->
+
+			<section class="hero text-center" aria-label="home" id="home">
+				<ul class="hero-slider" data-hero-slider>
+					<li class="slider-item active" data-hero-slider-item>
+						<div class="slider-bg">
+							<img src="./src/images/hero/hero-slider-1.jpg" width="1880" height="950" alt=""
+								class="img-cover">
+						</div>
+						<p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+						<h1 class="display-1 hero-title slider-reveal">
+							For the love of <br>
+							delicious food
+						</h1>
+						<p class="body-2 hero-text slider-reveal">
+							Come with family & feel the joy of mouthwatering food
+						</p>
+						<a href="#" class="btn btn-primary slider-reveal">
+							<span class="text text-1">View Our Menu</span>
+							<span class="text text-2" aria-hidden="true">View Our Menu</span>
+						</a>
+					</li>
+					<li class="slider-item" data-hero-slider-item>
+						<div class="slider-bg">
+							<img src="./src/images/hero/hero-slider-2.jpg" width="1880" height="950" alt=""
+								class="img-cover">
+						</div>
+						<p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+						<h1 class="display-1 hero-title slider-reveal">
+							Flavors Inspired by <br>
+							the Seasons
+						</h1>
+						<p class="body-2 hero-text slider-reveal">
+							Come with family & feel the joy of mouthwatering food
+						</p>
+						<a href="#" class="btn btn-primary slider-reveal">
+							<span class="text text-1">View Our Menu</span>
+
+							<span class="text text-2" aria-hidden="true">View Our Menu</span>
+						</a>
+					</li>
+
+					<li class="slider-item" data-hero-slider-item>
+						<div class="slider-bg">
+							<img src="./src/images/hero/hero-slider-3.jpg" width="1880" height="950" alt=""
+								class="img-cover">
+						</div>
+						<p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+						<h1 class="display-1 hero-title slider-reveal">
+							Where every flavor <br>
+							tells a story
+						</h1>
+						<p class="body-2 hero-text slider-reveal">
+							Come with family & feel the joy of mouthwatering food
+						</p>
+						<a href="#" class="btn btn-primary slider-reveal">
+							<span class="text text-1">View Our Menu</span>
+
+							<span class="text text-2" aria-hidden="true">View Our Menu</span>
+						</a>
+					</li>
+				</ul>
+
+				<button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+					<ion-icon name="chevron-back"></ion-icon>
+				</button>
+
+				<button class="slider-btn next" aria-label="slide to next" data-next-btn>
+					<ion-icon name="chevron-forward"></ion-icon>
+				</button>
+
+				<a href="#" class="hero-btn has-after">
+					<img src="./src/images/hero/hero-icon.png" width="48" height="48" alt="booking icon">
+
+					<span class="label-2 text-center span">Book A Table</span>
+				</a>
+			</section>
+
+			<!-- 
+		  	- #SERVICE
+			-->
+			<section class="section service bg-black-10 text-center" aria-label="service">
+				<div class="container">
+					<p class="section-subtitle label-2">Flavors For Royalty</p>
+					<h2 class="headline-1 section-title">We Offer Top Notch</h2>
+					<p class="section-text">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been
+						the industrys
+						standard dummy text ever.
+					</p>
+					<ul class="grid-list">
+						<li>
+							<div class="service-card">
+								<a href="#" class="has-before hover:shine">
+									<figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+										<img src="./src/images/service/service-1.jpg" width="285" height="336" loading="lazy"
+											alt="Breakfast" class="img-cover">
+									</figure>
+								</a>
+								<div class="card-content">
+									<h3 class="title-4 card-title">
+										<a href="#">Breakfast</a>
+									</h3>
+
+									<a href="#" class="btn-text hover-underline label-2">View Menu</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="service-card">
+								<a href="#" class="has-before hover:shine">
+									<figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+										<img src="./src/images/service/service-2.jpg" width="285" height="336" loading="lazy"
+											alt="Appetizers" class="img-cover">
+									</figure>
+								</a>
+								<div class="card-content">
+									<h3 class="title-4 card-title">
+										<a href="#">Appetizers</a>
+									</h3>
+									<a href="#" class="btn-text hover-underline label-2">View Menu</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="service-card">
+								<a href="#" class="has-before hover:shine">
+									<figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+										<img src="./src/images/service/service-3.jpg" width="285" height="336" loading="lazy"
+											alt="Drinks" class="img-cover">
+									</figure>
+								</a>
+								<div class="card-content">
+									<h3 class="title-4 card-title">
+										<a href="#">Drinks</a>
+									</h3>
+									<a href="#" class="btn-text hover-underline label-2">View Menu</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<img src="./src/images/shape/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+						class="shape shape-1 move-anim">
+					<img src="./src/images/shape/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+						class="shape shape-2 move-anim">
+				</div>
+			</section>
+			<!-- 
+		 	 - #ABOUT
+			-->
+			<section class="section about text-center" aria-labelledby="about-label" id="about">
+				<div class="container">
+					<div class="about-content">
+						<p class="label-2 section-subtitle" id="about-label">Our Story</p>
+						<h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+						<p class="section-text">
+							Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has
+							been the
+							industrys standard dummy text ever since the when an unknown printer took a galley of type
+							and scrambled
+							it to make a type specimen book It has survived not only five centuries, but also the leap
+							into.
+						</p>
+						<div class="contact-label">Book Through Call</div>
+						<a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+						<a href="#" class="btn btn-primary">
+							<span class="text text-1">Read More</span>
+							<span class="text text-2" aria-hidden="true">Read More</span>
+						</a>
+					</div>
+					<figure class="about-banner">
+						<img src="./src/images/about/about-banner.jpg" width="570" height="570" loading="lazy"
+							alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+						<div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+							<img src="/src/images/about/about-abs-image.jpg" width="285" height="285" loading="lazy"
+								alt="" class="w-100">
+						</div>
+						<div class="abs-img abs-img-2 has-before">
+							<img src="./src/images/badge/badge-2.png" width="133" height="134" loading="lazy" alt="">
+						</div>
+					</figure>
+					<img src="./src/images/shape/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+				</div>
+			</section>
+			<!-- 
+			  - #SPECIAL DISH
+			-->
+			<section class="special-dish text-center" aria-labelledby="dish-label">
+				<div class="special-dish-banner">
+					<img src="/src/images/special-dish-banner.jpg" width="940" height="900" loading="lazy"
+						alt="special dish" class="img-cover">
+				</div>
+				<div class="special-dish-content bg-black-10">
+					<div class="container">
+						<img src="./src/images/badge/badge-1.png" width="28" height="41" loading="lazy" alt="badge"
+							class="abs-img">
+						<p class="section-subtitle label-2">Special Dish</p>
+						<h2 class="headline-1 section-title">Lobster Tortellini</h2>
+						<p class="section-text">
+							Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has
+							been the
+							industrys standard dummy text ever since the when an unknown printer took a galley of type.
+						</p>
+						<div class="wrapper">
+							<del class="del body-3">$40.00</del>
+
+							<span class="span body-1">$20.00</span>
+						</div>
+						<a href="#" class="btn btn-primary">
+							<span class="text text-1">View All Menu</span>
+							<span class="text text-2" aria-hidden="true">View All Menu</span>
+						</a>
+					</div>
+				</div>
+				<img src="./src/images/shape/shape-4.png" width="179" height="359" loading="lazy" alt=""
+					class="shape shape-1">
+				<img src="./src/images/shape/shape-9.png" width="351" height="462" loading="lazy" alt=""
+					class="shape shape-2">
+			</section>
+			<!-- 
+		 	 - #MENU
+			-->
+
+			<section class="section menu" aria-label="menu-label" id="menu">
+				<div class="container">
+					<p class="section-subtitle text-center label-2">Special Selection</p>
+					<h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+					<ul class="grid-list">
+						<li>
+							<div class="menu-card hover:card">
+								<figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+									<img src="./src/images/menu/menu-1.png" width="100" height="100" loading="lazy"
+										alt="Greek Salad" class="img-cover">
+								</figure>
+								<div>
+									<div class="title-wrapper">
+										<h3 class="title-3">
+											<a href="#" class="card-title">Greek Salad</a>
+										</h3>
+										<span class="badge label-1">Seasonal</span>
+										<span class="span title-2">$25.50</span>
+									</div>
+									<p class="card-text label-1">
+										Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="menu-card hover:card">
+								<figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+									<img src="./src/images/menu/menu-2.png" width="100" height="100" loading="lazy"
+										alt="Lasagne" class="img-cover">
+								</figure>
+								<div>
+									<div class="title-wrapper">
+										<h3 class="title-3">
+											<a href="#" class="card-title">Lasagne</a>
+										</h3>
+										<span class="span title-2">$40.00</span>
+									</div>
+									<p class="card-text label-1">
+										Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="menu-card hover:card">
+								<figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+									<img src="./src/images/menu/menu-3.png" width="100" height="100" loading="lazy"
+										alt="Butternut Pumpkin" class="img-cover">
+								</figure>
+								<div>
+									<div class="title-wrapper">
+										<h3 class="title-3">
+											<a href="#" class="card-title">Butternut Pumpkin</a>
+										</h3>
+										<span class="span title-2">$10.00</span>
+									</div>
+									<p class="card-text label-1">
+										Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="menu-card hover:card">
+								<figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+									<img src="./src/images/menu/menu-4.png" width="100" height="100" loading="lazy"
+										alt="Tokusen Wagyu" class="img-cover">
+								</figure>
+								<div>
+									<div class="title-wrapper">
+										<h3 class="title-3">
+											<a href="#" class="card-title">Tokusen Wagyu</a>
+										</h3>
+										<span class="badge label-1">New</span>
+										<span class="span title-2">$39.00</span>
+									</div>
+									<p class="card-text label-1">
+										Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="menu-card hover:card">
+								<figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+									<img src="./src/images/menu/menu-5.png" width="100" height="100" loading="lazy"
+										alt="Olivas Rellenas" class="img-cover">
+								</figure>
+								<div>
+									<div class="title-wrapper">
+										<h3 class="title-3">
+											<a href="#" class="card-title">Olivas Rellenas</a>
+										</h3>
+										<span class="span title-2">$25.00</span>
+									</div>
+
+									<p class="card-text label-1">
+										Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green
+										bell pepper.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="menu-card hover:card">
+								<figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+									<img src="./src/images/menu/menu-6.png" width="100" height="100" loading="lazy"
+										alt="Opu Fish" class="img-cover">
+								</figure>
+								<div>
+									<div class="title-wrapper">
+										<h3 class="title-3">
+											<a href="#" class="card-title">Opu Fish</a>
+										</h3>
+										<span class="span title-2">$49.00</span>
+									</div>
+									<p class="card-text label-1">
+										Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<p class="menu-text text-center">
+						During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+					</p>
+
+					<a href="#" class="btn btn-primary">
+						<span class="text text-1">View All Menu</span>
+						<span class="text text-2" aria-hidden="true">View All Menu</span>
+					</a>
+
+					<img src="./src/images/shape/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+						class="shape shape-2 move-anim">
+					<img src="./src/images/shape/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+						class="shape shape-3 move-anim">
+				</div>
+			</section>
+			<!-- 
+		 	 - #TESTIMONIALS
+			-->
+			<section class="section testi text-center has-bg-image"
+				style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+				<div class="container">
+					<div class="quote">”</div>
+					<p class="headline-2 testi-text">
+						I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
+						extraordinary.
+					</p>
+					<div class="wrapper">
+						<div class="separator"></div>
+						<div class="separator"></div>
+						<div class="separator"></div>
+					</div>
+					<div class="profile">
+						<img src="./src/images/testi-avatar.jpg" width="100" height="100" loading="lazy"
+							alt="Sam Jhonson" class="img">
+						<p class="label-2 profile-name">Sam Jhonson</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 
+		 	 - #RESERVATION
+			-->
+
+			<section class="reservation">
+				<div class="container">
+					<div class="form reservation-form bg-black-10">
+						<form action="" class="form-left">
+							<h2 class="headline-1 text-center">Online Reservation</h2>
+							<p class="form-text text-center">
+								Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
+								or fill out the order form
+							</p>
+							<div class="input-wrapper">
+								<input type="text" name="name" placeholder="Your Name" autocomplete="off"
+									class="input-field">
+								<input type="tel" name="phone" placeholder="Phone Number" autocomplete="off"
+									class="input-field">
+							</div>
+							<div class="input-wrapper">
+								<div class="icon-wrapper">
+									<ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+									<select name="person" class="input-field">
+										<option value="1-person">1 Person</option>
+										<option value="2-person">2 Person</option>
+										<option value="3-person">3 Person</option>
+										<option value="4-person">4 Person</option>
+										<option value="5-person">5 Person</option>
+										<option value="6-person">6 Person</option>
+										<option value="7-person">7 Person</option>
+									</select>
+									<ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+								</div>
+								<div class="icon-wrapper">
+									<ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+									<input type="date" name="reservation-date" class="input-field">
+									<ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+								</div>
+								<div class="icon-wrapper">
+									<ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+									<select name="person" class="input-field">
+										<option value="08:00am">08 : 00 am</option>
+										<option value="09:00am">09 : 00 am</option>
+										<option value="010:00am">10 : 00 am</option>
+										<option value="011:00am">11 : 00 am</option>
+										<option value="012:00am">12 : 00 am</option>
+										<option value="01:00pm">01 : 00 pm</option>
+										<option value="02:00pm">02 : 00 pm</option>
+										<option value="03:00pm">03 : 00 pm</option>
+										<option value="04:00pm">04 : 00 pm</option>
+										<option value="05:00pm">05 : 00 pm</option>
+										<option value="06:00pm">06 : 00 pm</option>
+										<option value="07:00pm">07 : 00 pm</option>
+										<option value="08:00pm">08 : 00 pm</option>
+										<option value="09:00pm">09 : 00 pm</option>
+										<option value="10:00pm">10 : 00 pm</option>
+									</select>
+									<ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+								</div>
+							</div>
+							<textarea name="message" placeholder="Message" autocomplete="off"
+								class="input-field"></textarea>
+							<button type="submit" class="btn btn-secondary">
+								<span class="text text-1">Book A Table</span>
+								<span class="text text-2" aria-hidden="true">Book A Table</span>
+							</button>
+						</form>
+						<div class="form-right text-center"
+							style="background-image: url('./assets/images/form-pattern.png')">
+							<h2 class="headline-1 text-center">Contact Us</h2>
+							<p class="contact-label">Booking Request</p>
+							<a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+							<div class="separator"></div>
+							<p class="contact-label">Location</p>
+							<address class="body-4">
+								B-2, Level-2, Asad Ave<br>
+								Dhaka 1207 
+							</address>
+							<p class="contact-label">Lunch Time</p>
+							<p class="body-4">
+								Monday to Sunday <br>
+								11.00 am - 2.30pm
+							</p>
+							<p class="contact-label">Dinner Time</p>
+							<p class="body-4">
+								Monday to Sunday <br>
+								05.00 pm - 10.00pm
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+		  	- #FEATURES
+			-->
+			<section class="section features text-center" aria-label="features">
+				<div class="container">
+					<p class="section-subtitle label-2">Why Choose Us</p>
+					<h2 class="headline-1 section-title">Our Strength</h2>
+					<ul class="grid-list">
+						<li class="feature-item">
+							<div class="feature-card">
+								<div class="card-icon">
+									<img src="./src/images/features/features-icon-1.png" width="100" height="80"
+										loading="lazy" alt="icon">
+								</div>
+								<h3 class="title-2 card-title">Hygienic Food</h3>
+								<p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+							</div>
+						</li>
+						<li class="feature-item">
+							<div class="feature-card">
+								<div class="card-icon">
+									<img src="./src/images/features/features-icon-2.png" width="100" height="80"
+										loading="lazy" alt="icon">
+								</div>
+								<h3 class="title-2 card-title">Fresh Environment</h3>
+								<p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+							</div>
+						</li>
+						<li class="feature-item">
+							<div class="feature-card">
+								<div class="card-icon">
+									<img src="./src/images/features/features-icon-3.png" width="100" height="80"
+										loading="lazy" alt="icon">
+								</div>
+								<h3 class="title-2 card-title">Skilled Chefs</h3>
+								<p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+							</div>
+						</li>
+						<li class="feature-item">
+							<div class="feature-card">
+								<div class="card-icon">
+									<img src="./src/images/features/features-icon-4.png" width="100" height="80"
+										loading="lazy" alt="icon">
+								</div>
+								<h3 class="title-2 card-title">Event & Party</h3>
+								<p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+							</div>
+						</li>
+					</ul>
+					<img src="./src/images/shape/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+						class="shape shape-1">
+					<img src="./src/images/shape/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+						class="shape shape-2">
+				</div>
+			</section>
+
+			<!-- 
+			  - #EVENT
+			-->
+			<section class="section event bg-black-10" aria-label="event">
+				<div class="container">
+					<p class="section-subtitle label-2 text-center">Recent Updates</p>
+					<h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+					<ul class="grid-list">
+						<li>
+							<div class="event-card has-before hover:shine">
+								<div class="card-banner img-holder" style="--width: 350; --height: 450;">
+									<img src="./src/images/event/event-1.jpg" width="350" height="450" loading="lazy"
+										alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+									<time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+								</div>
+								<div class="card-content">
+									<p class="card-subtitle label-2 text-center">Food, Flavour</p>
+									<h3 class="card-title title-2 text-center">
+										Flavour so good you’ll try to eat with your eyes.
+									</h3>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="event-card has-before hover:shine">
+								<div class="card-banner img-holder" style="--width: 350; --height: 450;">
+									<img src="./src/images/event/event-2.jpg" width="350" height="450" loading="lazy"
+										alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+									<time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+								</div>
+								<div class="card-content">
+									<p class="card-subtitle label-2 text-center">Healthy Food</p>
+									<h3 class="card-title title-2 text-center">
+										Flavour so good you’ll try to eat with your eyes.
+									</h3>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="event-card has-before hover:shine">
+								<div class="card-banner img-holder" style="--width: 350; --height: 450;">
+									<img src="./src/images/event/event-3.jpg" width="350" height="450" loading="lazy"
+										alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+									<time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+								</div>
+								<div class="card-content">
+									<p class="card-subtitle label-2 text-center">Recipie</p>
+									<h3 class="card-title title-2 text-center">
+										Flavour so good you’ll try to eat with your eyes.
+									</h3>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<a href="#" class="btn btn-primary">
+						<span class="text text-1">View Our Blog</span>
+						<span class="text text-2" aria-hidden="true">View Our Blog</span>
+					</a>
+
+				</div>
+			</section>
+
+		</article>
+	</main>
+
+	<!-- 
+	  - #FOOTER
+	-->
+
+	<footer class="footer section has-bg-image text-center" id="contact"
+		style="background-image: url('./src/images/footer/footer-bg.jpg')">
+		<div class="container">
+			<div class="footer-top grid-list">
+				<div class="footer-brand has-before has-after">
+					<a href="#" class="logo">
+						<img src="./logo.png" width="160" height="50" loading="lazy"
+							alt="Restaurant home">
+					</a>
+					<address class="body-4">
+						Restaurant Suite No : B-2, Level-2, Asad Ave, Dhaka 1207
+					</address>
+					<a href="mailto:booking@Restaurant.com" class="body-4 contact-link">booking@Restaurant.com</a>
+					<a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +88-123-123456</a>
+					<p class="body-4">
+						Open : 09:00 am - 01:00 pm
+					</p>
+					<div class="wrapper">
+						<div class="separator"></div>
+						<div class="separator"></div>
+						<div class="separator"></div>
+					</div>
+					<p class="title-1">Get News & Offers</p>
+					<p class="label-1">
+						Subscribe us & Get <span class="span">25% Off.</span>
+					</p>
+					<form action="" class="input-wrapper">
+						<div class="icon-wrapper">
+							<ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+							<input type="email" name="email_address" placeholder="Your email" autocomplete="off"
+								class="input-field">
+						</div>
+						<button type="submit" class="btn btn-secondary">
+							<span class="text text-1">Subscribe</span>
+							<span class="text text-2" aria-hidden="true">Subscribe</span>
+						</button>
+					</form>
+				</div>
+
+				<ul class="footer-list">
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Home</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Menus</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">About Us</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Contact</a>
+					</li>
+				</ul>
+
+				<ul class="footer-list">
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+					</li>
+					<li>
+						<a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-bottom">
+				<p class="copyright">
+					&copy; 2022 Restaurant. All Rights Reserved | Crafted by <a href="theaminul.com" target="_blank"
+						class="link">The Aminul</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- 
+	  - #BACK TO TOP
+	-->
+
+	<a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+		<ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+	</a>
+	<!--
+	  - custom js link
+	-->
+	<script type="module" src="/src/js/main.js"></script>
+
+	<!-- 
+	  - ionicon link
+	-->
+	<script type="module" src="https://unpkg.com/ionicons@7.2.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.2.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
